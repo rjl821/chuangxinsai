@@ -1,0 +1,38 @@
+linux常用命令
+
+
+cd ：进入该用户的主目录 ~（root用户为/root,其他用户为/home/用户名）
+cd .. ：返回上一级目录（注意要空格）
+cd - ：返回上次所在目录
+cd / ：返回根目录 （绝对路径）
+cd ./目录1/目录2 ：进入当前目录下的子目录（相对路径）
+pwd ：显示工作路径（Print Working Directory 的缩写）
+
+ls:是List的缩写，用于列出目录下的文件，语法：ls [选项][目录或文件名]
+mkdir dir1 :创建目录(dir1)（mkdir为make directory的缩写）
+
+
+rm 文件 ：删除文件
+rm -r 目录或文件 ：删除目录（及目录下所有文件）（非空也可以）
+rm -rf 目录或文件 ：强制删除，如：rm -rf * 为删除当前目录下所有文件
+
+mv a b :移动或者重命名一个文件或者目录（存在即移动目录或覆盖文件，不存在即改名）
+mv /opt/git/g /opt/a ：移动g到opt目录下并改名为a（a目录不存在，若存在则为移动g到a目录下）
+mv -t ./test a.txt b.txt ：移动多个文件到某目录下
+
+
+cp -ai /opt/abc /opt/git/ ：复制abc目录（或文件）到git目录下（选项a表示文件的属性也复制、目录下所有文件都复制；i表示覆盖前询问）
+
+
+
+tar -zxvf a.tar.gz -C ./test ：解压tar.gz到当前目录下的test目录
+tar -zcvf /opt/c.tar.gz ./a/ ：压缩tar.gz（把当前目录下的a目录及目录下所有文件压缩为 /opt/目录下的c.tar.gz）
+
+tar -jxvf a.tar.bz2 ：解压tar.bz2（到当前目录）
+tar -jcvf c.tar.bz2 ./a/ ：压缩tar.bz2（把当前目录下的a目录及目录下所有文件压缩到当前目录下为c.tar.gz2）
+
+unzip a.zip ：解压zip（到当前目录）
+zip -r c.zip ./a/ :压缩zip(把当前目录下的a目录及目录下所有文件压缩到当前目录下为c.zip
+
+
+evince hello.pdf: 打开pdf
