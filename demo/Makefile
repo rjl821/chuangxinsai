@@ -16,10 +16,10 @@ export DEMO_ROOT := $(ROOT_DIR)
 # User configuration: design and simulation
 # ==============================================================================
 DUT_TOP := vector_mac
-TB_MODE ?= sv
+TB_MODE ?= uvm
 
 SV_TB_TOP       := tb_vector_mac
-UVM_TB_TOP      := tb_vector_mac_uvm
+UVM_TB_TOP      := dut_tb
 SYN_FILELIST    := $(ROOT_DIR)/filelist/rtl.f
 SV_SIM_FILELIST := $(ROOT_DIR)/filelist/sv.f
 UVM_FILELIST    := $(ROOT_DIR)/filelist/uvm.f
@@ -85,7 +85,8 @@ LINT_PROJECT := $(LINT_DIR)/$(DUT_TOP).prj
 CM_TYPES := line+cond+fsm+tgl+branch+assert
 CM_NAME  := $(TEST_NAME)_$(SEED)
 CM_DIR   := $(COV_ROOT)/$(CM_NAME).vdb
-FSDB     := $(SIM_DIR)/$(CM_NAME).fsdb
+#FSDB     := $(SIM_DIR)/$(CM_NAME).fsdb
+FSDB     := $(SIM_DIR)/DUT.fsdb
 
 COMPILE_CM_DIR := $(OBJ_DIR)/compile.vdb
 MERGED_CM_DIR  ?= $(COV_ROOT)/merged.vdb
@@ -144,7 +145,7 @@ ifeq ($(TB_MODE),uvm)
 endif
 	# -F reads every source and include path from the selected filelist.
 	@cd $(OBJ_DIR) && vlogan $(VLOGAN_OPTS) -F $(SIM_FILELIST) \
-		-l $(LOG_DIR)/compile.log
+		-l $(LOG_DIR)/compile.log 
 
 elab: comp
 	@cd $(OBJ_DIR) && vcs $(ELAB_OPTS) -top $(TB_TOP) -o $(SIMV) \
@@ -246,4 +247,4 @@ verdicov: prepare
 		-logdir $(COV_GUI_DIR)/vdCovLog
 
 clean:
-	@rm -rf -- $(BUILD_DIR)
+	

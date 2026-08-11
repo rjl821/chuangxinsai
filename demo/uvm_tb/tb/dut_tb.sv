@@ -9,6 +9,8 @@ module dut_tb;
 
   logic clk;
   logic rstn;
+  
+  string  fsdb_file;
 
   initial begin
     clk = 0;
@@ -66,7 +68,15 @@ module dut_tb;
   endproperty
   assert property (p_busy_when_result_valid)
     else `uvm_error("PROTOCOL", "busy must cover the result state")
-
+  
+    initial begin
+        if (!$value$plusargs("FSDB=%s", fsdb_file)) begin
+            fsdb_file = "DUT.fsdb";
+        end
+        $fsdbDumpfile(fsdb_file);
+        $fsdbDumpvars(0, dut_tb);
+    end
+  
 endmodule
 
 `endif
