@@ -1,0 +1,2 @@
+dut_smoke_test
+dut_rw_test
