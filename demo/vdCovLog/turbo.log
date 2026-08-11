@@ -1,0 +1,7 @@
+Command Line: /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/bin/vdCov -covdir /home/jjt/chuangxinsai/demo/build/vcs/sv/cov/merged.vdb
+uname(Linux localhost.localdomain 3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024 x86_64)
+- System Information -
+Version: Verdi_T-2022.06, -- Sun May 29 05:02:50 PDT 2022
+System: Linux localhost.localdomain 3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024 x86_64
+Total memory used: 0
+Run time: Tue Aug 11 10:11:01 2026

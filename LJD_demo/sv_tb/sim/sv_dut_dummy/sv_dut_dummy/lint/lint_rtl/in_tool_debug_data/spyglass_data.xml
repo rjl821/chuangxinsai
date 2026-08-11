@@ -1,0 +1,652 @@
+<CWD>/home/jjt/chuangxinsai/LJD_demo/sv_tb/sim/out/spyglass</CWD>
+<ENVVAR>
+	<env name="SPYGLASS_SPYAUTH_FILE">
+		<value>/tmp/spyAuthFileList1205181786376726</value>
+	</env>
+	<env name="LD_LIBRARY_PATH">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi/tkgui-new:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi/policy_data/spyglass/design_read:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/Audits:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/adv_lowpower:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/area:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/auto-verify:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/clock:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/constraints:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/cubic_netlist:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/dft:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/dft_dsm:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/erc:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/latch:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/lint:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/lowpower:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/mbist-dft:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/miscellaneous:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/morelint:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/openmore:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/power_est:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/prof:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/rtl2netlist:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/sec:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/simulation:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/spyglass:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/starc:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/starc2002:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/starc2005:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/starcad-21:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/timing:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/txv:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi/tkgui-new/Linux4:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi/rme:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi/rme/Parser:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi/rme/Parser/Linux4:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-perl/lib/5.8.3:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-perl/lib/site_perl/5.8.3:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi/tkgui-new/Linux4:/lib64/tls:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-tcl/lib/Linux4:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/python/Linux4/lib:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/../dotty/lib/Linux4:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi/tkgui-new/Linux4:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-tcl/lib/Linux4::/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-qt/lib/Linux4:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-nlview/Linux4:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-boost/Linux4:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-thirdparty/Linux4:/depot/gcc-4.8.3-patch/lib64:/usr/lib64:/usr/X11R6/lib64:/usr/local/lib64:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-vcst/vcs-mx/linux64/lib:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/oa/Linux4:::/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86:/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86/lib/64bit:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/oa/Linux4::/usr/lib:/lib:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/zebulib</value>
+	</env>
+	<env name="LC_PAPER">
+		<value>zh_CN.UTF-8</value>
+	</env>
+	<env name="XDG_VTNR">
+		<value>1</value>
+	</env>
+	<env name="INNOVUS_HOME">
+		<value>/home/jjt/install/cadence/innovus/innovus2020</value>
+	</env>
+	<env name="NVM_INC">
+		<value>/home/jjt/.nvm/versions/node/v18.20.8/include/node</value>
+	</env>
+	<env name="XDG_SESSION_ID">
+		<value>1</value>
+	</env>
+	<env name="SSH_AGENT_PID">
+		<value>3078</value>
+	</env>
+	<env name="HOSTNAME">
+		<value>localhost.localdomain</value>
+	</env>
+	<env name="LC_MONETARY">
+		<value>zh_CN.UTF-8</value>
+	</env>
+	<env name="IMSETTINGS_INTEGRATE_DESKTOP">
+		<value>yes</value>
+	</env>
+	<env name="SKIP_PLATFORM_CHECK">
+		<value>1</value>
+	</env>
+	<env name="NVM_CD_FLAGS">
+		<value/>
+	</env>
+	<env name="TERM">
+		<value>dumb</value>
+	</env>
+	<env name="XDG_MENU_PREFIX">
+		<value>gnome-</value>
+	</env>
+	<env name="VTE_VERSION">
+		<value>5204</value>
+	</env>
+	<env name="SHELL">
+		<value>/bin/bash</value>
+	</env>
+	<env name="HISTSIZE">
+		<value>1000</value>
+	</env>
+	<env name="MAKEFLAGS">
+		<value/>
+	</env>
+	<env name="USE_CALIBRE_VCO">
+		<value>aoj</value>
+	</env>
+	<env name="SPYGLASS_DW_PATH">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/dw_support</value>
+	</env>
+	<env name="TMPDIR">
+		<value/>
+	</env>
+	<env name="CODEX_MANAGED_PACKAGE_ROOT">
+		<value>/home/jjt/tools/nodejs-22.16.0/lib/node_modules/@openai/codex</value>
+	</env>
+	<env name="LD_PRELOAD">
+		<value/>
+	</env>
+	<env name="GNOME_TERMINAL_SCREEN">
+		<value>/org/gnome/Terminal/screen/be333dbe_6e87_433d_85e4_b223760b775e</value>
+	</env>
+	<env name="LC_NUMERIC">
+		<value>zh_CN.UTF-8</value>
+	</env>
+	<env name="SPYGLASS_IPC_SERVER_APP_INFO">
+		<value>/tmp/.SPYGLASS_IPC_SERVER_APP_INFO@@726</value>
+	</env>
+	<env name="QTDIR">
+		<value>/usr/lib64/qt-3.3</value>
+	</env>
+	<env name="QTINC">
+		<value>/usr/lib64/qt-3.3/include</value>
+	</env>
+	<env name="NO_COLOR">
+		<value>1</value>
+	</env>
+	<env name="LC_ALL">
+		<value/>
+	</env>
+	<env name="IMSETTINGS_MODULE">
+		<value>none</value>
+	</env>
+	<env name="QT_GRAPHICSSYSTEM_CHECKED">
+		<value>1</value>
+	</env>
+	<env name="NO_PROXY">
+		<value>localhost,127.0.0.0/8,::1</value>
+	</env>
+	<env name="SG_SPYGLASS_DW_PATH">
+		<value>1</value>
+	</env>
+	<env name="NVM_DIR">
+		<value>/home/jjt/.nvm</value>
+	</env>
+	<env name="USER">
+		<value>jjt</value>
+	</env>
+	<env name="LS_COLORS">
+		<value>rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:</value>
+	</env>
+	<env name="GNOME_TERMINAL_SERVICE">
+		<value>:1.105</value>
+	</env>
+	<env name="TCL_LIBRARY">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-tcl/lib/tcl</value>
+	</env>
+	<env name="SSH_AUTH_SOCK">
+		<value>/run/user/1000/keyring/ssh</value>
+	</env>
+	<env name="MAKELEVEL">
+		<value>1</value>
+	</env>
+	<env name="SESSION_MANAGER">
+		<value>local/unix:@/tmp/.ICE-unix/2942,unix/unix:/tmp/.ICE-unix/2942</value>
+	</env>
+	<env name="USERNAME">
+		<value>jjt</value>
+	</env>
+	<env name="SPYGLASS_PLATFORM">
+		<value>Linux4</value>
+	</env>
+	<env name="TOP">
+		<value>sv_dut_dummy</value>
+	</env>
+	<env name="PAGER">
+		<value>cat</value>
+	</env>
+	<env name="SPYGLASS_TMPDIR">
+		<value>/tmp</value>
+	</env>
+	<env name="MFLAGS">
+		<value/>
+	</env>
+	<env name="GNOME_SHELL_SESSION_MODE">
+		<value>classic</value>
+	</env>
+	<env name="STARRC_HOME">
+		<value>/home/jjt/install/synopsys/starrc/starrc/T-2022.03-SP2</value>
+	</env>
+	<env name="PATH">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/../dotty/scripts:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/../dotty/bin/Linux4:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/obj:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/obj:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/obj:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/jjt/tools/nodejs-22.16.0/bin:/usr/local/nodejs-22.16.0/bin:/home/jjt/nodejs/bin:/home/jjt/nodejs/bin:/home/jjt/tools/nodejs-22.16.0/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/jjt/.codex/tmp/arg0/codex-arg0SwFPJ4:/home/jjt/tools/nodejs-22.16.0/bin:/usr/local/nodejs-22.16.0/bin:/home/jjt/nodejs/bin:/home/jjt/nodejs/bin:/home/jjt/tools/nodejs-22.16.0/bin:/usr/local/nodejs-22.16.0/bin:/home/jjt/.nvm/versions/node/v18.20.8/bin:/home/jjt/nodejs/bin:/home/jjt/nodejs/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/jjt/install/synopsys/scl/scl/2021.03/linux64/bin:/home/jjt/install/synopsys/vcs/vcs/T-2022.06/bin:/home/jjt/install/synopsys/verdi/verdi/T-2022.06/bin:/home/jjt/install/synopsys/dc/syn/T-2022.03-SP2/bin:/home/jjt/install/synopsys/pt/prime/T-2022.03/bin:/home/jjt/install/synopsys/fm/fm/T-2022.03/bin:/home/jjt/install/synopsys/icc2/icc2/T-2022.03/bin:/home/jjt/install/synopsys/lc/lc/M-2016.12/bin:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin:/home/jjt/install/synopsys/starrc/starrc/T-2022.03-SP2/bin:/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86/bin:/home/jjt/install/mentor/calibre/calibre2022.2/aoj_cal_2022.2_38.20/bin:/home/jjt/install/mentor/tessent_2023_1/bin:/home/jjt/.local/bin:/home/jjt/bin:/home/jjt/install/synopsys/scl/scl/2021.03/linux64/bin:/home/jjt/install/synopsys/vcs/vcs/T-2022.06/bin:/home/jjt/install/synopsys/verdi/verdi/T-2022.06/bin:/home/jjt/install/synopsys/dc/syn/T-2022.03-SP2/bin:/home/jjt/install/synopsys/pt/prime/T-2022.03/bin:/home/jjt/install/synopsys/fm/fm/T-2022.03/bin:/home/jjt/install/synopsys/icc2/icc2/T-2022.03/bin:/home/jjt/install/synopsys/lc/lc/M-2016.12/bin:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin:/home/jjt/install/synopsys/starrc/starrc/T-2022.03-SP2/bin:/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86/bin:/home/jjt/install/mentor/calibre/calibre2022.2/aoj_cal_2022.2_38.20/bin:/home/jjt/install/mentor/tessent_2023_1/bin:/home/jjt/install/synopsys/scl/scl/2021.03/linux64/bin:/home/jjt/install/synopsys/vcs/vcs/T-2022.06/bin:/home/jjt/install/synopsys/verdi/verdi/T-2022.06/bin:/home/jjt/install/synopsys/dc/syn/T-2022.03-SP2/bin:/home/jjt/install/synopsys/pt/prime/T-2022.03/bin:/home/jjt/install/synopsys/fm/fm/T-2022.03/bin:/home/jjt/install/synopsys/icc2/icc2/T-2022.03/bin:/home/jjt/install/synopsys/lc/lc/M-2016.12/bin:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin:/home/jjt/install/synopsys/starrc/starrc/T-2022.03-SP2/bin:/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86/bin:/home/jjt/install/mentor/calibre/calibre2022.2/aoj_cal_2022.2_38.20/bin:/home/jjt/install/mentor/tessent_2023_1/bin:/home/jjt/.local/bin:/home/jjt/bin</value>
+	</env>
+	<env name="MAIL">
+		<value>/var/spool/mail/jjt</value>
+	</env>
+	<env name="DESKTOP_SESSION">
+		<value>gnome-classic</value>
+	</env>
+	<env name="PT_HOME">
+		<value>/home/jjt/install/synopsys/pt/prime/T-2022.03</value>
+	</env>
+	<env name="QT_IM_MODULE">
+		<value>ibus</value>
+	</env>
+	<env name="SAVE_CATALOG">
+		<value>PATH</value>
+	</env>
+	<env name="NVM_NODEJS_ORG_MIRROR">
+		<value>https://unofficial-builds.nodejs.org/download/release</value>
+	</env>
+	<env name="CODEX_THREAD_ID">
+		<value>019feb8c-89c1-7a41-9bfd-eb693b473266</value>
+	</env>
+	<env name="VERDI_HOME">
+		<value>/home/jjt/install/synopsys/verdi/verdi/T-2022.06</value>
+	</env>
+	<env name="CALIBRE_HOME">
+		<value>/home/jjt/install/mentor/calibre/calibre2022.2/aoj_cal_2022.2_38.20</value>
+	</env>
+	<env name="PWD">
+		<value>/home/jjt/chuangxinsai/LJD_demo/sv_tb/sim/out/spyglass</value>
+	</env>
+	<env name="XDG_SESSION_TYPE">
+		<value>x11</value>
+	</env>
+	<env name="CMD_FILE_PATH">
+		<value>/tmp/cmdfile_120518</value>
+	</env>
+	<env name="VCS_HOME">
+		<value>/home/jjt/install/synopsys/vcs/vcs/T-2022.06</value>
+	</env>
+	<env name="XMODIFIERS">
+		<value>@im=ibus</value>
+	</env>
+	<env name="FM_HOME">
+		<value>/home/jjt/install/synopsys/fm/fm/T-2022.03</value>
+	</env>
+	<env name="LANG">
+		<value/>
+	</env>
+	<env name="GDM_LANG">
+		<value>zh_CN.UTF-8</value>
+	</env>
+	<env name="LC_MEASUREMENT">
+		<value>zh_CN.UTF-8</value>
+	</env>
+	<env name="KDEDIRS">
+		<value>/usr</value>
+	</env>
+	<env name="SPYGLASS_IPC_SERVER_APP_PID">
+		<value>120902</value>
+	</env>
+	<env name="CODEX_MANAGED_BY_NPM">
+		<value>1</value>
+	</env>
+	<env name="CODEX_CI">
+		<value>1</value>
+	</env>
+	<env name="TESSENT_HOME">
+		<value>/home/jjt/install/mentor/tessent_2023_1</value>
+	</env>
+	<env name="SPG_INTRNL_INVCN">
+		<value>1</value>
+	</env>
+	<env name="LM_LICENSE_FILE">
+		<value>27000@localhost.localdomain:/home/jjt/install/cadence/cadence.dat:/home/jjt/install/mentor/license/license.dat</value>
+	</env>
+	<env name="GDMSESSION">
+		<value>gnome-classic</value>
+	</env>
+	<env name="HISTCONTROL">
+		<value>ignoredups</value>
+	</env>
+	<env name="SPYGLASS_USE_SNPSMEM">
+		<value>yes</value>
+	</env>
+	<env name="SHLVL">
+		<value>8</value>
+	</env>
+	<env name="XDG_SEAT">
+		<value>seat0</value>
+	</env>
+	<env name="HOME">
+		<value>/home/jjt</value>
+	</env>
+	<env name="LANGUAGE">
+		<value/>
+	</env>
+	<env name="SYN_FILELIST">
+		<value>/home/jjt/chuangxinsai/LJD_demo/sv_tb/sim/rtl.f</value>
+	</env>
+	<env name="ICC2_HOME">
+		<value>/home/jjt/install/synopsys/icc2/icc2/T-2022.03</value>
+	</env>
+	<env name="GNOME_DESKTOP_SESSION_ID">
+		<value>this-is-deprecated</value>
+	</env>
+	<env name="no_proxy">
+		<value>localhost,127.0.0.0/8,::1</value>
+	</env>
+	<env name="GH_PAGER">
+		<value>cat</value>
+	</env>
+	<env name="MGC_LIB_PATH">
+		<value>/home/jjt/install/mentor/calibre/calibre2022.2/aoj_cal_2022.2_38.20/lib:/home/jjt/install/mentor/tessent_2023_1/lnx-x86/lib64:/home/jjt/install/mentor/tessent_2023_1/lnx-x86/bin64</value>
+	</env>
+	<env name="DC_HOME">
+		<value>/home/jjt/install/synopsys/dc/syn/T-2022.03-SP2</value>
+	</env>
+	<env name="LOGNAME">
+		<value>jjt</value>
+	</env>
+	<env name="XDG_SESSION_DESKTOP">
+		<value>gnome-classic</value>
+	</env>
+	<env name="SPYGLASS_HOME">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME</value>
+	</env>
+	<env name="QTLIB">
+		<value>/usr/lib64/qt-3.3/lib</value>
+	</env>
+	<env name="SPYGLASS_ENABLE_SYS_IPC_SERVER">
+		<value>yes</value>
+	</env>
+	<env name="SPYGLASS_TCL_SHELL">
+		<value>ok</value>
+	</env>
+	<env name="LC_CTYPE">
+		<value>C.UTF-8</value>
+	</env>
+	<env name="DBUS_SESSION_BUS_ADDRESS">
+		<value>unix:abstract=/tmp/dbus-AaKIGCpa5D,guid=ab83ac8e573f1d7f3f430d7e6a79bd71</value>
+	</env>
+	<env name="XDG_DATA_DIRS">
+		<value>/home/jjt/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/</value>
+	</env>
+	<env name="SPYGLASS_LD_PRELOAD">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/libreplacemalloc.so</value>
+	</env>
+	<env name="NVM_BIN">
+		<value>/home/jjt/.nvm/versions/node/v18.20.8/bin</value>
+	</env>
+	<env name="LESSOPEN">
+		<value>||/usr/bin/lesspipe.sh %s</value>
+	</env>
+	<env name="SCL_HOME">
+		<value>/home/jjt/install/synopsys/scl/scl/2021.03</value>
+	</env>
+	<env name="SHLIB_PATH">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/oa/Linux4:::/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86:/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86/lib/64bit:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/oa/Linux4::/usr/lib:/lib</value>
+	</env>
+	<env name="SPYGLASS_LICENSE_QUEUING_INTERVAL">
+		<value>24000 10</value>
+	</env>
+	<env name="WINDOWPATH">
+		<value>1</value>
+	</env>
+	<env name="DISPLAY">
+		<value>:0</value>
+	</env>
+	<env name="XDG_RUNTIME_DIR">
+		<value>/run/user/1000</value>
+	</env>
+	<env name="LC_HOME">
+		<value>/home/jjt/install/synopsys/lc/lc/M-2016.12</value>
+	</env>
+	<env name="QT_PLUGIN_PATH">
+		<value>/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins</value>
+	</env>
+	<env name="XDG_CURRENT_DESKTOP">
+		<value>GNOME-Classic:GNOME</value>
+	</env>
+	<env name="GIT_PAGER">
+		<value>cat</value>
+	</env>
+	<env name="LC_TIME">
+		<value>zh_CN.UTF-8</value>
+	</env>
+	<env name="SPG_CMD_PARSE_TO_GET_SCREEN_OUT_SETTING">
+		<value>no</value>
+	</env>
+	<env name="SPYGLASS_CHECKER_PID_FILE_VAR">
+		<value>/tmp/.SPYGLASS_CHECKER_PID_FILE@@120518726</value>
+	</env>
+	<env name="COLORTERM">
+		<value/>
+	</env>
+	<env name="XAUTHORITY">
+		<value>/run/gdm/auth-for-jjt-HaKO2B/database</value>
+	</env>
+	<env name="SAVE_PATH">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/obj:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/obj:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/jjt/tools/nodejs-22.16.0/bin:/usr/local/nodejs-22.16.0/bin:/home/jjt/nodejs/bin:/home/jjt/nodejs/bin:/home/jjt/tools/nodejs-22.16.0/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/jjt/.codex/tmp/arg0/codex-arg0SwFPJ4:/home/jjt/tools/nodejs-22.16.0/bin:/usr/local/nodejs-22.16.0/bin:/home/jjt/nodejs/bin:/home/jjt/nodejs/bin:/home/jjt/tools/nodejs-22.16.0/bin:/usr/local/nodejs-22.16.0/bin:/home/jjt/.nvm/versions/node/v18.20.8/bin:/home/jjt/nodejs/bin:/home/jjt/nodejs/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/jjt/install/synopsys/scl/scl/2021.03/linux64/bin:/home/jjt/install/synopsys/vcs/vcs/T-2022.06/bin:/home/jjt/install/synopsys/verdi/verdi/T-2022.06/bin:/home/jjt/install/synopsys/dc/syn/T-2022.03-SP2/bin:/home/jjt/install/synopsys/pt/prime/T-2022.03/bin:/home/jjt/install/synopsys/fm/fm/T-2022.03/bin:/home/jjt/install/synopsys/icc2/icc2/T-2022.03/bin:/home/jjt/install/synopsys/lc/lc/M-2016.12/bin:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin:/home/jjt/install/synopsys/starrc/starrc/T-2022.03-SP2/bin:/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86/bin:/home/jjt/install/mentor/calibre/calibre2022.2/aoj_cal_2022.2_38.20/bin:/home/jjt/install/mentor/tessent_2023_1/bin:/home/jjt/.local/bin:/home/jjt/bin:/home/jjt/install/synopsys/scl/scl/2021.03/linux64/bin:/home/jjt/install/synopsys/vcs/vcs/T-2022.06/bin:/home/jjt/install/synopsys/verdi/verdi/T-2022.06/bin:/home/jjt/install/synopsys/dc/syn/T-2022.03-SP2/bin:/home/jjt/install/synopsys/pt/prime/T-2022.03/bin:/home/jjt/install/synopsys/fm/fm/T-2022.03/bin:/home/jjt/install/synopsys/icc2/icc2/T-2022.03/bin:/home/jjt/install/synopsys/lc/lc/M-2016.12/bin:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin:/home/jjt/install/synopsys/starrc/starrc/T-2022.03-SP2/bin:/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86/bin:/home/jjt/install/mentor/calibre/calibre2022.2/aoj_cal_2022.2_38.20/bin:/home/jjt/install/mentor/tessent_2023_1/bin:/home/jjt/install/synopsys/scl/scl/2021.03/linux64/bin:/home/jjt/install/synopsys/vcs/vcs/T-2022.06/bin:/home/jjt/install/synopsys/verdi/verdi/T-2022.06/bin:/home/jjt/install/synopsys/dc/syn/T-2022.03-SP2/bin:/home/jjt/install/synopsys/pt/prime/T-2022.03/bin:/home/jjt/install/synopsys/fm/fm/T-2022.03/bin:/home/jjt/install/synopsys/icc2/icc2/T-2022.03/bin:/home/jjt/install/synopsys/lc/lc/M-2016.12/bin:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/bin:/home/jjt/install/synopsys/starrc/starrc/T-2022.03-SP2/bin:/home/jjt/install/cadence/innovus/innovus2020/tools.lnx86/bin:/home/jjt/install/mentor/calibre/calibre2022.2/aoj_cal_2022.2_38.20/bin:/home/jjt/install/mentor/tessent_2023_1/bin:/home/jjt/.local/bin:/home/jjt/bin</value>
+	</env>
+	<env name="_">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/obj/check.Linux4</value>
+	</env>
+	<env name="CONCORDE_HOME">
+		<value>DUMMY_CONCORDE_HOME</value>
+	</env>
+	<env name="FLEXLM_BORROWFILE">
+		<value>/home/jjt/.localhost.localdomain-borrow.txt</value>
+	</env>
+	<env name="MANPATH">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/starc/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/power_est/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/morelint/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/lowpower/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/lint/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/latch/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/erc/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/dft/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/constraints/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/clock/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/policies/auto-verify/sgtcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/lib/multi-tcl/man:/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/auxi/help_doc/man</value>
+	</env>
+	<env name="METHODOLOGY_HOME">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff</value>
+	</env>
+</ENVVAR>
+<ENVFILE>./sv_dut_dummy/sv_dut_dummy/lint/lint_rtl//.sg.env</ENVFILE>
+<SPG_VERSION>SpyGlass_vT-2022.06-1</SPG_VERSION>
+<MACHINE name="localhost.localdomain" version="#1 SMP Tue Jun 4 14:43:51 UTC 2024"/>
+<Options>
+	<Opt name="--template_info">
+		<value>lint/lint_rtl</value>
+	</Opt>
+	<Opt name="+incdir">
+		<value>../../RTL</value>
+	</Opt>
+	<Opt name="-lib">
+		<value>WORK=&gt;./sv_dut_dummy/sv_dut_dummy/WORK</value>
+		<value>SYNOPSYS=&gt;/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/vhdl_libs/Linux4/SYNOPSYS</value>
+	</Opt>
+	<Opt name="-m">
+		<value>SpyGlass::Compatibility::v2_7_3</value>
+		<value>SpyGlass::Compatibility::v2_7_3</value>
+		<value>SpyGlass::Compatibility::v2_7_3</value>
+	</Opt>
+	<Opt name="-overloadrules">
+		<value>STARC05-2.1.6.5+severity=Warning</value>
+		<value>STARC05-2.3.1.2c+severity=Error</value>
+		<value>W421+severity=Error</value>
+		<value>sim_race02+severity=Warning</value>
+		<value>W416+severity=Error</value>
+		<value>PragmaComments-ML+severity=Data</value>
+		<value>STARC05-2.10.2.3+severity=Warning</value>
+		<value>STARC05-2.11.3.1+severity=Warning</value>
+		<value>STARC05-2.3.1.5b+severity=Error</value>
+		<value>W289+severity=Error</value>
+		<value>W293+severity=Error</value>
+		<value>W352+severity=Error</value>
+		<value>W398+severity=Error</value>
+		<value>W422+severity=Error</value>
+		<value>W71+severity=Error</value>
+		<value>ParamWidthMismatch-ML+severity=Warning</value>
+		<value>ReportPortInfo-ML+severity=Data</value>
+		<value>STARC05-2.1.3.1+severity=Warning</value>
+		<value>STARC05-2.1.5.3+severity=Warning</value>
+		<value>STARC05-2.2.3.3+severity=Warning</value>
+		<value>STARC05-2.3.1.6+severity=Warning</value>
+		<value>W110+severity=Error</value>
+		<value>W122+severity=Error</value>
+		<value>W123+severity=Error</value>
+		<value>W19+severity=Error</value>
+		<value>W218+severity=Error</value>
+		<value>W505+severity=Error</value>
+		<value>W66+severity=Error</value>
+		<value>InferLatch+severity=Error</value>
+		<value>RegInputOutput-ML+severity=Data</value>
+		<value>STARC05-2.3.4.1v+severity=Warning</value>
+		<value>STARC05-2.5.1.7+severity=Warning</value>
+		<value>STARC05-2.5.1.9+severity=Warning</value>
+		<value>W336+severity=Error</value>
+		<value>W414+severity=Error</value>
+		<value>W450L+severity=Warning</value>
+		<value>UndrivenInTerm-ML+severity=Error</value>
+		<value>BufClock+severity=Warning</value>
+		<value>checkPinConnectedToSupply+severity=Error</value>
+		<value>CombLoop+msgLabel=CombLoop+severity=Error</value>
+		<value>FlopClockConstant+msgLabel=FlopClockConstant+severity=Error</value>
+		<value>LatchFeedback+severity=Error</value>
+		<value>STARC05-1.2.1.2+severity=Error</value>
+		<value>STARC05-1.3.1.3+severity=Warning</value>
+		<value>STARC05-1.4.3.4+severity=Warning</value>
+		<value>STARC05-2.1.4.5+severity=Warning</value>
+		<value>STARC05-2.4.1.5+severity=Error</value>
+		<value>W415+msgLabel=W415+severity=Error</value>
+	</Opt>
+	<Opt name="-policy">
+		<value>openmore</value>
+		<value>starc</value>
+		<value>starc2005</value>
+		<value>erc</value>
+		<value>simulation</value>
+		<value>lint</value>
+		<value>latch</value>
+		<value>spyglass</value>
+		<value>morelint</value>
+		<value>timing</value>
+	</Opt>
+	<Opt name="-report">
+		<value>moresimple</value>
+		<value>runsummary</value>
+	</Opt>
+	<Opt name="-rules">
+		<value>badimplicitSM1</value>
+		<value>badimplicitSM2</value>
+		<value>badimplicitSM4</value>
+		<value>BlockHeader</value>
+		<value>bothedges</value>
+		<value>STARC05-2.1.6.5</value>
+		<value>STARC05-2.3.1.2c</value>
+		<value>W421</value>
+		<value>W442a</value>
+		<value>W442b</value>
+		<value>W442c</value>
+		<value>W442f</value>
+		<value>sim_race02</value>
+		<value>W110a</value>
+		<value>W416</value>
+		<value>CheckDelayTimescale-ML</value>
+		<value>PragmaComments-ML</value>
+		<value>STARC05-2.10.2.3</value>
+		<value>STARC05-2.11.3.1</value>
+		<value>STARC05-2.3.1.5b</value>
+		<value>W215</value>
+		<value>W216</value>
+		<value>W289</value>
+		<value>W292</value>
+		<value>W293</value>
+		<value>W317</value>
+		<value>W352</value>
+		<value>W398</value>
+		<value>W422</value>
+		<value>W424</value>
+		<value>W426</value>
+		<value>W467</value>
+		<value>W480</value>
+		<value>W481a</value>
+		<value>W481b</value>
+		<value>W496a</value>
+		<value>W496b</value>
+		<value>W71</value>
+		<value>NoAssignX-ML</value>
+		<value>NoXInCase-ML</value>
+		<value>ParamWidthMismatch-ML</value>
+		<value>ReportPortInfo-ML</value>
+		<value>STARC05-2.1.3.1</value>
+		<value>STARC05-2.1.5.3</value>
+		<value>STARC05-2.2.3.3</value>
+		<value>STARC05-2.3.1.6</value>
+		<value>W110</value>
+		<value>W116</value>
+		<value>W122</value>
+		<value>W123</value>
+		<value>W19</value>
+		<value>W218</value>
+		<value>W240</value>
+		<value>W263</value>
+		<value>W337</value>
+		<value>W362</value>
+		<value>W486</value>
+		<value>W499</value>
+		<value>W502</value>
+		<value>W505</value>
+		<value>W66</value>
+		<value>InferLatch</value>
+		<value>RegInputOutput-ML</value>
+		<value>STARC05-2.3.4.1v</value>
+		<value>STARC05-2.5.1.7</value>
+		<value>STARC05-2.5.1.9</value>
+		<value>STARC05-2.10.3.2a</value>
+		<value>W336</value>
+		<value>W414</value>
+		<value>W450L</value>
+		<value>UndrivenInTerm-ML</value>
+		<value>BufClock</value>
+		<value>checkPinConnectedToSupply</value>
+		<value>CombLoop</value>
+		<value>FlopClockConstant</value>
+		<value>FlopEConst</value>
+		<value>FlopSRConst</value>
+		<value>LatchFeedback</value>
+		<value>STARC05-1.2.1.2</value>
+		<value>STARC05-1.3.1.3</value>
+		<value>STARC05-1.4.3.4</value>
+		<value>STARC05-2.1.4.5</value>
+		<value>STARC05-2.4.1.5</value>
+		<value>STARC05-2.5.1.2</value>
+		<value>W392</value>
+		<value>W415</value>
+		<value>STARC05-2.10.1.4a</value>
+		<value>STARC05-2.10.1.4b</value>
+		<value>W156</value>
+		<value>STARC05-2.3.3.1</value>
+		<value>W415a</value>
+		<value>W287b</value>
+		<value>W224</value>
+		<value>W287a</value>
+		<value>W528</value>
+		<value>mixedsenselist</value>
+		<value>W339a</value>
+	</Opt>
+	<Opt name="-template">
+		<value>lint/lint_rtl</value>
+	</Opt>
+	<Opt name="-top">
+		<value>sv_dut_dummy</value>
+	</Opt>
+	<Opt name="-verilog_files">
+		<value>../../RTL/sv_dut_dummy.sv</value>
+	</Opt>
+	<Opt name="+vlogarg">
+		<value>+suppress+36</value>
+	</Opt>
+	<Opt name="--stime">
+		<value>11:45:25 PM on Aug 10 2026</value>
+	</Opt>
+	<Opt name="-blackboxdir">
+		<value>inout</value>
+	</Opt>
+	<Opt name="-dbdir">
+		<value>./sv_dut_dummy/sv_dut_dummy/.SG_SaveRestoreDB</value>
+	</Opt>
+	<Opt name="-debuglevel">
+		<value>0</value>
+	</Opt>
+	<Opt name="-enable_save_restore_builtin">
+		<value>true</value>
+	</Opt>
+	<Opt name="-gateslibtype">
+		<value>0</value>
+	</Opt>
+	<Opt name="-logfile">
+		<value>./sv_dut_dummy/sv_dut_dummy/lint/lint_rtl/spyglass.log</value>
+	</Opt>
+	<Opt name="-mthresh">
+		<value>4096</value>
+	</Opt>
+	<Opt name="-projectwdir">
+		<value>./sv_dut_dummy</value>
+	</Opt>
+	<Opt name="-savedb">
+		<value>./sv_dut_dummy/sv_dut_dummy/.SG_SaveRestoreDB</value>
+	</Opt>
+	<Opt name="-sortmethod">
+		<value>du</value>
+	</Opt>
+	<Opt name="-templatedir">
+		<value>/home/jjt/install/synopsys/spyglass/spyglass/T-2022.06-1/SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff</value>
+	</Opt>
+	<Opt name="-vdbfile">
+		<value>./sv_dut_dummy/sv_dut_dummy/lint/lint_rtl/spyglass.vdb</value>
+	</Opt>
+	<Opt name="-wdir">
+		<value>./sv_dut_dummy/sv_dut_dummy/lint/lint_rtl</value>
+	</Opt>
+	<Opt name="-work">
+		<value>WORK</value>
+	</Opt>
+	<Opt name="-64bit">
+		<value>yes</value>
+	</Opt>
+	<Opt name="--end_of_user_arg">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-batch">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-enable_fast_traversal">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-enable_save_restore">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-enableSV">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-inferblackbox">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-nl">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-sdc2sgdc">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-mixed">
+		<value>yes</value>
+	</Opt>
+</Options>
+<TOP_MODULE>sv_dut_dummy</TOP_MODULE>
+<GOAL_NAME>lint/lint_rtl</GOAL_NAME>
+<FILES/>
+<SPG_LOG>./sv_dut_dummy/sv_dut_dummy/lint/lint_rtl/spyglass.log</SPG_LOG>
+<CMD_STRING> -batch -project sv_dut_dummy.prj -goal lint/lint_rtl -64bit</CMD_STRING>

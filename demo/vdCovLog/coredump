@@ -1,0 +1,89 @@
+Thread 6 (Thread 0x7fa1bd5b7700 (LWP 42915)):
+#0  0x00007fa1c24769fd in nanosleep () from /lib64/libc.so.6
+#1  0x00007fa1c2476894 in sleep () from /lib64/libc.so.6
+#2  0x000000000253a004 in LicenseCheckUtility ()
+#3  0x00000000055d2c84 in sdp_wrap_start_routine ()
+#4  0x00007fa1c83a0ea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fa1c24afb0d in clone () from /lib64/libc.so.6
+Thread 5 (Thread 0x7fa1b9040700 (LWP 42926)):
+#0  0x00007fa1c83a4a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007fa1c6240675 in WTF::TCMalloc_PageHeap::scavengerThread() () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtWebKit.so.4
+#2  0x00007fa1c62406c9 in WTF::TCMalloc_PageHeap::runScavengerThread(void*) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtWebKit.so.4
+#3  0x00000000055d2c84 in sdp_wrap_start_routine ()
+#4  0x00007fa1c83a0ea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fa1c24afb0d in clone () from /lib64/libc.so.6
+Thread 4 (Thread 0x7fa1b883f700 (LWP 42927)):
+#0  0x00007fa1c24a6b43 in select () from /lib64/libc.so.6
+#1  0x00007fa1c6eef133 in qt_safe_select(int, fd_set*, fd_set*, fd_set*, timeval const*) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#2  0x00007fa1c6ef1ffc in QEventDispatcherUNIXPrivate::doSelect(QFlags<QEventLoop::ProcessEventsFlag>, timeval*) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#3  0x00007fa1c6ef2b22 in QEventDispatcherUNIX::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#4  0x00007fa1c6ec7e2f in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#5  0x00007fa1c6ec80c8 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#6  0x00007fa1c6de9e33 in QThread::exec() () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#7  0x00007fa1c6dec661 in QThreadPrivate::start(void*) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#8  0x00000000055d2c84 in sdp_wrap_start_routine ()
+#9  0x00007fa1c83a0ea5 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007fa1c24afb0d in clone () from /lib64/libc.so.6
+Thread 3 (Thread 0x7fa1b4e33700 (LWP 42928)):
+#0  0x00007fa1c83a4de2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007fa1c6deb3b6 in thread_sleep(timespec*) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#2  0x00007fa1c6debaed in QThread::msleep(unsigned long) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#3  0x00000000049cb02e in ag::dveXThread::run() ()
+#4  0x00007fa1c6dec661 in QThreadPrivate::start(void*) () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#5  0x00000000055d2c84 in sdp_wrap_start_routine ()
+#6  0x00007fa1c83a0ea5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007fa1c24afb0d in clone () from /lib64/libc.so.6
+Thread 2 (Thread 0x7fa1b4632700 (LWP 42932)):
+#0  0x00007fa1c2476659 in waitpid () from /lib64/libc.so.6
+#1  0x00007fa1c23f3f62 in do_system () from /lib64/libc.so.6
+#2  0x00007fa1c23f4311 in system () from /lib64/libc.so.6
+#3  0x00000000046dd2ba in sysiCrash ()
+#4  0x00000000046dd7f3 in actUnexpectAction ()
+#5  0x00000000046dd83b in catchSignalCB ()
+#6  0x0000000003852e97 in _anrep_handler_signal ()
+#7  <signal handler called>
+#8  0x00007fa1c8e48adf in mem_page_get_descr () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libsnpsmalloc.so
+#9  0x00007fa1c8e54c50 in mem_free () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libsnpsmalloc.so
+#10 0x00007fa1c8e38222 in snpsCheckFreeFunc () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libsnpsmalloc.so
+#11 0x00007fa1bfbb18c8 in SNPSle_bfa95170f0e69c64 () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#12 0x00007fa1bfbb191a in SNPSle_4c72eb6e37712225 () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#13 0x00007fa1bfbb213b in SNPSle_9ff9b2dce8f1fde9 () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#14 0x00007fa1bfbb002c in SNPSle_36c2d46996c96605 () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#15 0x00007fa1bfbb04f1 in SNPSle_2c2186f0f2f42415 () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#16 0x00007fa1bfbb0607 in SNPSle_126d17af453e054a () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#17 0x00000000055d2c84 in sdp_wrap_start_routine ()
+#18 0x00007fa1c83a0ea5 in start_thread () from /lib64/libpthread.so.0
+#19 0x00007fa1c24afb0d in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x7fa1c8ed25c0 (LWP 42907)):
+#0  0x00007fa1c24769fd in nanosleep () from /lib64/libc.so.6
+#1  0x00007fa1c2476894 in sleep () from /lib64/libc.so.6
+#2  0x00007fa1bf944bb6 in SNPSle_95ae9cc2e78cc668673c60b8d88c4908 () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#3  0x00007fa1bf944d5d in SNPSle_92de4d0d4cf0d6931bc37e8d42a01d93 () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#4  0x00007fa1bf942f17 in SNPSle_b76ef993ee82b3d58a5cadddbec8b67c () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#5  0x00007fa1bf94322d in SNPSle_f28f24b8c84ac8f6e02e0b03bcd33aa8 () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#6  0x00007fa1bf92d1b2 in SNPSle_5e54eaa1df739f6ed4c1ff24a0986ee6 () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#7  0x00007fa1bf92d4bc in SNPSle_058778405d2a6c04ddd18247ba7f440f () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#8  0x00007fa1bf92f86a in SNPSle_e376be325e61b493d6bd988d8077bacc () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#9  0x00007fa1bf928013 in SNPSle_a10369bdf7c5916ddd6866ce7e2e861c () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#10 0x00007fa1bf9283a5 in SNPSle_00b1acee80c770570cd75f9efbe24cca () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#11 0x00007fa1bf928f25 in SNPSle_ba11b1edbd04051f5bb81b1861cdf84a () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#12 0x00007fa1bf91a8a2 in SNPSle_2e65c0794628fc5af60953149776c29b () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#13 0x00007fa1bf78ce97 in SNPSle_45bacbc75485abed52ca9d2d770b39292a6b46dfb6b113401b29144988c2b793e15ca6182358927e () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#14 0x00007fa1bf78d22d in SNPSle_227885e0c09a380609290a1d21a1f4252f13d83b176aca6e () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#15 0x00007fa1bf78d8cc in SNPSle_05057d9c09af118a7dbd6edb84304e5b () from /home/jjt/install/synopsys/verdi/verdi/T-2022.06/platform/linux64/bin/libucapi.so
+#16 0x000000000534d5f4 in ag::covDbType::isOfType(char const*) ()
+#17 0x00000000048fd998 in ag::ovaAppInst::getAvailableTests(QStringList*, char const*, char const*, char const*) ()
+#18 0x0000000004910d88 in ag::ovaAppInst::generateOpenDBCmd(QStringList, QString, QString*) ()
+#19 0x0000000004913601 in ag::ovaAppInst::processCoverageOptions() ()
+#20 0x0000000004913a03 in ag::ovaAppInst::processCommandLineOptions(QDomDocument&) ()
+#21 0x0000000004916181 in ag::ovaAppInst::startGuiSession(int&, char**) ()
+#22 0x0000000001b4e1b2 in main ()
+---------------
+branchName=Verdi_T-2022.06 cnlDate=-- Sun May 29 05:02:50 PDT 2022 cnlEnv=Linux.0/64bit
+uname(Linux localhost.localdomain 3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024 x86_64)
+---------------
+Process Size: 566059008 bytes
+vdCov detected abnormal termination.
+Log information written to
+/home/jjt/chuangxinsai/demo/vdCovLog/sysinfo_Aug11_1011.tar.
+Please send this file to customer support.
