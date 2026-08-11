@@ -1,2 +1,0 @@
-tb_smoke_test
-tb_directed_test

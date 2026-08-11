@@ -1,5 +1,0 @@
--1 "STX_VE_842" 2
-"RULEGROUP"
-["Design Read"]
-"BUILTIN"
-"1"

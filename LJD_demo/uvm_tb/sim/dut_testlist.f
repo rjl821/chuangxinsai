@@ -1,1 +1,0 @@
-dut_smoke_test
