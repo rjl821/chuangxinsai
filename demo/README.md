@@ -138,6 +138,16 @@ UVM test 通过标准的 `+UVM_TESTNAME=...` 传入：
 
 两套 testbench 都会随机插入输入空拍和输出 back-pressure，并比较有符号点积结果。未知测试名会直接报错，不会静默运行默认测试。
 
+## 工具环境
+
+Makefile 不设置 `VERDI_HOME`，也不包含 Verdi 安装目录。运行前只需在 shell 环境中配置好 Verdi，使下面的命令能返回当前版本的可执行文件：
+
+```bash
+command -v verdi
+```
+
+`make verdi` 和 `make verdicov` 直接通过 `PATH` 调用 `verdi`。VCS elaboration 所需的 `novas.tab` 和 `pli.a` 也会根据 `command -v verdi` 的结果自动定位到同一套 Verdi 安装下的 `share/PLI/VCS/linux64/`，因此切换 Verdi 版本后无需修改 Makefile。外部环境即使设置了 `VERDI_HOME` 也不会被 Makefile 覆盖。
+
 ## Makefile 全部可配置参数
 
 下面列出用户可能从 Makefile 或命令行覆盖的全部参数。
@@ -157,7 +167,6 @@ UVM test 通过标准的 `+UVM_TESTNAME=...` 传入：
 | `SEED` | `2026` | VCS/UVM 随机种子，也是 VDB/FSDB 名的一部分 |
 | `UVM_VERBOSITY` | `UVM_LOW` | UVM 日志等级，如 `UVM_NONE/LOW/MEDIUM/HIGH/FULL/DEBUG` |
 | `CLOCK_PERIOD_NS` | `10.0` | 仿真时钟周期，同时传给 SDC，单位 ns |
-| `VERDI_HOME` | 本机 T-2022.06 路径 | Verdi 可执行文件和 FSDB PLI 根目录 |
 | `SPYGLASS_GOAL` | `lint/lint_rtl` | `make lint` 执行且 `make lint_gui` 打开的 SpyGlass goal；两者必须保持一致 |
 | `BUILD_DIR` | `build` | 全部生成文件根目录 |
 | `DEMO_ROOT` | 自动等于工程根目录 | Makefile 导出的内部环境变量，供 filelist 形成绝对源码路径；通常不要手动设置 |
@@ -326,6 +335,20 @@ UVM 模式先执行一次不带用户 filelist 的 `vlogan -ntb_opts uvm-1.2`，
 | `-cov` | 以覆盖率分析模式启动 Verdi |
 | `-covdir <merged.vdb>` | 打开 URG 合并后的覆盖率数据库 |
 
+`make verdicov` 只打开 `make cov_merge` 产生的完整 merged VDB，不应直接把单个 test VDB 作为 `MERGED_CM_DIR`。单个运行 VDB 可能只包含 test data，没有完整 design coverage model。
+
+Verdi coverage 从独立目录 `build/vcs/<mode>/cov_gui/` 启动，并额外使用：
+
+| 参数或环境变量 | 作用 |
+| --- | --- |
+| `VCS_USE_MALLOC=1` | 让 vdCov 使用系统兼容的内存分配路径。Verdi T-2022.06 使用默认 `libsnpsmalloc.so` 枚举 merged VDB 中的 test 时可能发生非法释放并触发段错误；该变量同时也是本工程运行 URG 时采用的兼容设置 |
+| `-guiConf <cov_gui/verdi_cov.conf>` | 单独保存覆盖率 GUI 配置，避免读取工程根目录或普通波形 Verdi 留下的 `novas.conf` |
+| `-logdir <cov_gui/vdCovLog>` | 将 vdCov 日志、崩溃诊断和运行记录固定写入当前仿真模式的构建目录 |
+
+`VCS_USE_MALLOC=1` 写在 `verdi` 命令前，只对本次 coverage GUI 进程生效，不会修改用户 shell 的全局环境。此次段错误的堆栈位于 `libsnpsmalloc.so` 和 `libucapi.so`，数据库日志同时明确显示 design 已加载成功；因此根因是 T-2022.06 默认内存分配器的兼容性问题，不是 `-covdir` 语法错误，也不是 merged VDB 缺少 design model。
+
+`verdicov` 会先检查 `MERGED_CM_DIR` 是否存在，不存在时提示执行对应 `TB_MODE` 的 `make cov_merge`。SV 和 UVM 使用各自独立的 `cov_gui/`，不会互相复用 GUI 状态。独立 `-guiConf` 与工作目录用于隔离 GUI 状态和日志，但真正避免本次 `libsnpsmalloc.so` 崩溃的是 `VCS_USE_MALLOC=1`。
+
 ## DVE 参数逐项说明
 
 `make dve` 不是离线打开 FSDB，而是用 `simv -gui=dve` 启动可控制仿真运行的 GUI，因此它同时接收上文列出的所有 simv plusarg 和覆盖率参数。DVE 专用参数只有：
@@ -334,7 +357,7 @@ UVM 模式先执行一次不带用户 filelist 的 `vlogan -ntb_opts uvm-1.2`，
 | --- | --- |
 | `-gui=dve` | 从 `simv` 启动 DVE，支持断点、单步、run/stop、force 和波形观察 |
 
-合并覆盖率 GUI 使用：
+合并覆盖率 GUI 使用；DVE 也从同一个独立 `cov_gui/` 工作目录启动：
 
 | 参数 | 作用 |
 | --- | --- |

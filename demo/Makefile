@@ -66,7 +66,6 @@ TECH_LIB := /home/jjt/TSMC28/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_201805
 INPUT_DRIVE_CELL := INVD1BWP12T40P140
 EXTRA_LINK_LIBS :=
 
-VERDI_HOME := /home/jjt/install/synopsys/verdi/verdi/T-2022.06
 SPYGLASS_GOAL ?= lint/lint_rtl
 
 # ==============================================================================
@@ -78,6 +77,7 @@ LOG_DIR    := $(MODE_BUILD)/log
 OBJ_DIR    := $(MODE_BUILD)/obj
 SIM_DIR    := $(MODE_BUILD)/sim
 COV_ROOT   := $(MODE_BUILD)/cov
+COV_GUI_DIR := $(MODE_BUILD)/cov_gui
 SIMV       := $(OBJ_DIR)/simv
 LINT_DIR   := $(BUILD_DIR)/spyglass
 LINT_PROJECT := $(LINT_DIR)/$(DUT_TOP).prj
@@ -95,7 +95,9 @@ MERGED_DBNAME := $(COV_ROOT)/merged/merged
 COV_INPUTS ?= $(filter-out $(MERGED_CM_DIR),$(wildcard $(COV_ROOT)/*.vdb))
 COV_REPORT ?= $(MODE_BUILD)/coverage_report
 
-VCS_PLI_DIR := $(VERDI_HOME)/share/PLI/VCS/linux64
+# Resolve Verdi from the caller's PATH; no installation path is hard-coded.
+VERDI_BIN := $(shell command -v verdi 2>/dev/null)
+VCS_PLI_DIR := $(abspath $(dir $(VERDI_BIN))/../share/PLI/VCS/linux64)
 PLI_OPTS := -P $(VCS_PLI_DIR)/novas.tab $(VCS_PLI_DIR)/pli.a
 
 VLOGAN_OPTS := -full64 -sverilog -timescale=1ns/1ps -kdb \
@@ -131,7 +133,7 @@ help:
 	@echo "make clean          : delete this project's build directory"
 
 prepare:
-	@mkdir -p $(LOG_DIR) $(OBJ_DIR) $(SIM_DIR) $(COV_ROOT)
+	@mkdir -p $(LOG_DIR) $(OBJ_DIR) $(SIM_DIR) $(COV_ROOT) $(COV_GUI_DIR)
 	@mkdir -p $(LINT_DIR)
 	@mkdir -p $(BUILD_DIR)/dc/reports $(BUILD_DIR)/dc/outputs $(BUILD_DIR)/dc/work
 
@@ -167,7 +169,7 @@ sim_uvm:
 # Verdi parses exactly the same filelist as VCS. The filelist expands
 # DEMO_ROOT, so all source and include entries resolve to absolute paths.
 verdi: sim
-	@cd $(SIM_DIR) && $(VERDI_HOME)/bin/verdi -sv \
+	@cd $(SIM_DIR) && verdi -sv \
 		$(UVM_COMPILE_OPTS) -f $(SIM_FILELIST) \
 		-top $(TB_TOP) -ssf $(FSDB) -nologo &
 
@@ -225,11 +227,23 @@ cov_merge mergecov: prepare
 		-dbname $(MERGED_DBNAME) -report $(COV_REPORT) \
 		-format both -show ratios -show tests
 
-dvecov:
-	@dve -full64 -cov -covdir $(MERGED_CM_DIR)
+dvecov: prepare
+	@test -d "$(MERGED_CM_DIR)" || { \
+		echo "ERROR: $(MERGED_CM_DIR) does not exist; run 'make cov_merge TB_MODE=$(TB_MODE)' first."; \
+		exit 2; \
+	}
+	@cd $(COV_GUI_DIR) && dve -full64 -cov -covdir $(MERGED_CM_DIR)
 
-verdicov:
-	@$(VERDI_HOME)/bin/verdi -cov -covdir $(MERGED_CM_DIR)
+# Verdi T-2022.06 vdCov can crash in libsnpsmalloc while enumerating tests.
+verdicov: prepare
+	@test -d "$(MERGED_CM_DIR)" || { \
+		echo "ERROR: $(MERGED_CM_DIR) does not exist; run 'make cov_merge TB_MODE=$(TB_MODE)' first."; \
+		exit 2; \
+	}
+	@cd $(COV_GUI_DIR) && VCS_USE_MALLOC=1 \
+		verdi -cov -covdir $(MERGED_CM_DIR) \
+		-guiConf $(COV_GUI_DIR)/verdi_cov.conf \
+		-logdir $(COV_GUI_DIR)/vdCovLog
 
 clean:
 	@rm -rf -- $(BUILD_DIR)
