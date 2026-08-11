@@ -1,0 +1,16 @@
+out/
+csrc/
+*.simv
+*.simv.daidir/
+*.vdb/
+*.log
+*.vcd
+*.vpd
+*.fsdb
+ucli.key
+DVEfiles/
+AN.DB/
+urgReport/
+novas.*
+verdiLog/
+vdCovLog/

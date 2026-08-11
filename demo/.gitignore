@@ -1,0 +1,15 @@
+/build/
+/novas.conf
+/novas.rc
+/verdiLog/
+/spyglass-*/
+/WORK/
+/default.svf
+/command.log
+/ucli.key
+/novas_dump.log
+/*.mr
+/*-verilog.pvl
+/*-verilog.syn
+/sg_shell.log
+/alib-*/
